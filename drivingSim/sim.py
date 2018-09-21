@@ -30,7 +30,5 @@ else:
     print("The person reached the destination. (Reached {}m)".format(finalDistance))
 plt.plot(timeList, distanceList, 'r-')
 plt.ylabel("Distance (m)")
-plt.xlabel("Time (s)")
-
-# print(distanceList)
+plt.xlabel("Time (s)") 
 plt.show()
