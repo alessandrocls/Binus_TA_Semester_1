@@ -6,8 +6,6 @@ acceleration = int(input("Acceleration of car?\n"))
 distance = int(input("Distance travelled?\n"))
 distanceList = []
 timeList = [i for i in range(time+1)]
-speeding = False
-destinationReached = False
 finalSpeed = acceleration * time
 
 
@@ -30,5 +28,5 @@ else:
     print("The person reached the destination. (Reached {}m)".format(finalDistance))
 plt.plot(timeList, distanceList, 'r-')
 plt.ylabel("Distance (m)")
-plt.xlabel("Time (s)") 
+plt.xlabel("Time (s)")
 plt.show()
