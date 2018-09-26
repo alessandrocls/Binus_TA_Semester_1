@@ -5,4 +5,4 @@ def kmp(names):
         newName = newName + namesList[i][0]
     print(newName)
 
-kmp("Kreutz-Keppler-Klaus")
+kmp("Kreutz-Keppler-Krautz")
