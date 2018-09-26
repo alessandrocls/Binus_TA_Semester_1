@@ -1,11 +1,11 @@
 def modulo42():
-    numList = []
+
     modList = []
     for i in range(10):
-        numList.append(int(input("Please input a number:\n")))
-    for i in range(len(numList)):
-        if numList[i] % 42 not in modList:
-            modList.append(numList[i] % 42)
+        num = int(input("Please input a number:\n")) % 42
+        if num not in modList:
+            modList.append(num)
+
     print(len(modList))
 
 modulo42()
