@@ -1,4 +1,4 @@
-cups = ["ball", "no", "no"]
+cups = [1,0,0]
 
 def switcharoo (list, move):
     move = move.lower()
@@ -13,7 +13,7 @@ def switcharoo (list, move):
 def cupsAndBalls (cups,moves):
     for i in range(len(moves)):
         list = switcharoo(cups, moves[i])
-    location = list.index("ball") + 1
+    location = list.index(1) + 1
     print(location)
 
 
