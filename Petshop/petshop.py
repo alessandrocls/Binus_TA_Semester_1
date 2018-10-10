@@ -76,10 +76,12 @@ class PetShop:
             for j in pets[i]:
                 print(j)
 
-
+    def purge(self):
+        pets = {}
+        print("Congratulations you monster.")
     def actions(self):
         print("Welcome to the SfQf Cats and Dogs Pet Store. What would you like to do today?(input the number)")
-        action = input("1.Buy\n2.Sell\n3.View\n4.Exit\n")
+        action = input("1.Buy\n2.Sell\n3.View\n4.Exit\n5.Purge")
         if action == '1':
             animal = input("What animal would you like to buy?\n")
             if animal not in pets:
@@ -98,6 +100,14 @@ class PetShop:
             self.actions()
         elif action == '4':
             print("Come back soon!")
+        elif action == '5':
+            decision = input ("This will kill all the animals. Are you sure?(y/n)\n")
+            if decision == 'y':
+                self.purge()
+                self.action(self)
+            else:
+                print("Good call.")
+                self.action(self)
         else:
             print("Invalid action, try again.")
             self.actions()
